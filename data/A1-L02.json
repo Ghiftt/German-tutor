@@ -1,0 +1,65 @@
+{
+  "id": "A1-L02",
+  "title": "Kein Problem! - Basic Sentences",
+  "level": "A1",
+  "chapter": "Intro",
+  "grammar_topic": "Verb position in statements and questions",
+  "vocabulary": [
+    {
+      "word": "Ja",
+      "translation": "Yes"
+    },
+    {
+      "word": "Nein",
+      "translation": "No"
+    },
+    {
+      "word": "Bitte",
+      "translation": "Please / You are welcome"
+    },
+    {
+      "word": "Danke",
+      "translation": "Thank you"
+    },
+    {
+      "word": "Entschuldigung",
+      "translation": "Excuse me / Sorry"
+    },
+    {
+      "word": "Kein Problem",
+      "translation": "No problem"
+    },
+    {
+      "word": "Ich verstehe nicht",
+      "translation": "I do not understand"
+    },
+    {
+      "word": "Bitte wiederholen Sie",
+      "translation": "Please repeat (formal)"
+    },
+    {
+      "word": "Langsamer bitte",
+      "translation": "Slower please"
+    },
+    {
+      "word": "Ich spreche ein bisschen Deutsch",
+      "translation": "I speak a little German"
+    }
+  ],
+  "grammar": {
+    "topic": "Verb position - verb is always second element",
+    "forms": {
+      "Ich komme aus Nigeria": "I come from Nigeria",
+      "Komme ich aus Nigeria?": "WRONG - verb must be second",
+      "Woher kommst du?": "Where do you come from?",
+      "Ich wohne in Deutschland": "I live in Germany"
+    }
+  },
+  "objectives": [
+    "Use basic courtesy phrases",
+    "Say you do not understand and ask for repetition",
+    "Understand verb position in German sentences"
+  ],
+  "nursing_note": "Entschuldigung and Ich verstehe nicht are critical survival phrases for your first weeks in Germany.",
+  "mastery_pass_score": 80
+}

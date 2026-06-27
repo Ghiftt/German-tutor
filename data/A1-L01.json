@@ -1,0 +1,71 @@
+{
+  "id": "A1-L01",
+  "title": "Hallo! - Greetings",
+  "level": "A1",
+  "chapter": "Intro",
+  "grammar_topic": "Basic sentence structure: Ich bin, Das ist",
+  "vocabulary": [
+    {
+      "word": "Hallo",
+      "translation": "Hello"
+    },
+    {
+      "word": "Guten Morgen",
+      "translation": "Good morning"
+    },
+    {
+      "word": "Guten Tag",
+      "translation": "Good day"
+    },
+    {
+      "word": "Guten Abend",
+      "translation": "Good evening"
+    },
+    {
+      "word": "Gute Nacht",
+      "translation": "Good night"
+    },
+    {
+      "word": "Auf Wiedersehen",
+      "translation": "Goodbye (formal)"
+    },
+    {
+      "word": "Tschuess",
+      "translation": "Bye (informal)"
+    },
+    {
+      "word": "Wie geht es Ihnen?",
+      "translation": "How are you? (formal)"
+    },
+    {
+      "word": "Wie geht es dir?",
+      "translation": "How are you? (informal)"
+    },
+    {
+      "word": "Gut, danke",
+      "translation": "Good, thank you"
+    },
+    {
+      "word": "Nicht so gut",
+      "translation": "Not so good"
+    }
+  ],
+  "grammar": {
+    "topic": "sein (to be) - present tense",
+    "forms": {
+      "ich bin": "I am",
+      "du bist": "you are (informal)",
+      "er/sie/es ist": "he/she/it is",
+      "wir sind": "we are",
+      "ihr seid": "you are (plural)",
+      "sie/Sie sind": "they are / you are (formal)"
+    }
+  },
+  "objectives": [
+    "Say hello and goodbye formally and informally",
+    "Ask and answer how someone is doing",
+    "Use sein (to be) in present tense"
+  ],
+  "nursing_note": "You will greet patients and colleagues every shift. Guten Morgen and Wie geht es Ihnen are used dozens of times daily.",
+  "mastery_pass_score": 80
+}

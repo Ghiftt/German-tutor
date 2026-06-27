@@ -1,0 +1,75 @@
+{
+  "id": "A1-L18",
+  "title": "Ich traeume von... - Wishes and Dreams",
+  "level": "A1",
+  "chapter": "Future Plans",
+  "grammar_topic": "wuerde gern, haette gern, and future with werden",
+  "vocabulary": [
+    {
+      "word": "Ich wuerde gern...",
+      "translation": "I would like to... (wish for an action)"
+    },
+    {
+      "word": "Ich haette gern...",
+      "translation": "I would like to have... (wish for a thing)"
+    },
+    {
+      "word": "Ich moechte in Deutschland arbeiten",
+      "translation": "I want to work in Germany"
+    },
+    {
+      "word": "Ich will Krankenpflegerin werden",
+      "translation": "I want to become a nurse"
+    },
+    {
+      "word": "der Traum",
+      "translation": "the dream"
+    },
+    {
+      "word": "die Zukunft",
+      "translation": "the future"
+    },
+    {
+      "word": "Ich werde...lernen",
+      "translation": "I will learn... (future with werden)"
+    },
+    {
+      "word": "Ich hoffe",
+      "translation": "I hope"
+    },
+    {
+      "word": "Mein Ziel ist...",
+      "translation": "My goal is..."
+    },
+    {
+      "word": "die Ausbildung abschliessen",
+      "translation": "to complete the training"
+    },
+    {
+      "word": "Ich bin zuversichtlich",
+      "translation": "I am confident"
+    },
+    {
+      "word": "Es wird klappen",
+      "translation": "It will work out"
+    }
+  ],
+  "grammar": {
+    "topic": "werden for future + wuerde gern for wishes",
+    "forms": {
+      "werden (future)": "ich werde, du wirst, er/sie wird, wir werden",
+      "Ich werde Deutsch lernen": "I will learn German - infinitive at end",
+      "wuerde gern + infinitive": "would like to do something",
+      "haette gern + noun": "would like to have something",
+      "Difference": "wuerde gern arbeiten (action) vs haette gern einen Job (thing)"
+    }
+  },
+  "objectives": [
+    "Talk about your future plans and goals",
+    "Use werden for future tense",
+    "Use wuerde gern and haette gern",
+    "Express your dreams and aspirations in German"
+  ],
+  "nursing_note": "Ich moechte in Deutschland als Krankenpflegerin arbeiten und meine Ausbildung erfolgreich abschliessen - this is your goal. Now you can say it in German.",
+  "mastery_pass_score": 80
+}

@@ -1,0 +1,78 @@
+{
+  "id": "A1-L13",
+  "title": "Wegbeschreibung - Giving Directions",
+  "level": "A1",
+  "chapter": "Places",
+  "grammar_topic": "Imperative form and prepositions of direction",
+  "vocabulary": [
+    {
+      "word": "Wo ist...?",
+      "translation": "Where is...?"
+    },
+    {
+      "word": "Wie komme ich zu...?",
+      "translation": "How do I get to...?"
+    },
+    {
+      "word": "Gehen Sie geradeaus",
+      "translation": "Go straight ahead (formal)"
+    },
+    {
+      "word": "Biegen Sie links ab",
+      "translation": "Turn left (formal)"
+    },
+    {
+      "word": "Biegen Sie rechts ab",
+      "translation": "Turn right (formal)"
+    },
+    {
+      "word": "Die erste Strasse links",
+      "translation": "The first street on the left"
+    },
+    {
+      "word": "Die zweite Strasse rechts",
+      "translation": "The second street on the right"
+    },
+    {
+      "word": "gegenueber",
+      "translation": "opposite"
+    },
+    {
+      "word": "neben",
+      "translation": "next to"
+    },
+    {
+      "word": "das Krankenhaus",
+      "translation": "the hospital"
+    },
+    {
+      "word": "die Apotheke",
+      "translation": "the pharmacy"
+    },
+    {
+      "word": "der Bahnhof",
+      "translation": "the train station"
+    },
+    {
+      "word": "die Haltestelle",
+      "translation": "the bus/tram stop"
+    }
+  ],
+  "grammar": {
+    "topic": "Imperative (command form) for formal Sie",
+    "forms": {
+      "Gehen Sie...": "Go... (formal command)",
+      "Nehmen Sie...": "Take... (formal command)",
+      "Biegen Sie ab": "Turn... (formal command)",
+      "Formation": "Verb + Sie: fahren -> Fahren Sie, nehmen -> Nehmen Sie"
+    }
+  },
+  "objectives": [
+    "Ask and give directions",
+    "Use formal imperative Sie commands",
+    "Name key places in a German town",
+    "Understand direction prepositions"
+  ],
+  "nursing_note": "Patients and visitors will ask you for directions in the hospital constantly. Gehen Sie geradeaus, dann links is something you will say daily.",
+  "mastery_pass_score": 80
+}

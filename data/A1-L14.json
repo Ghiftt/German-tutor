@@ -1,0 +1,87 @@
+{
+  "id": "A1-L14",
+  "title": "Familie - Family Members",
+  "level": "A1",
+  "chapter": "Family",
+  "grammar_topic": "Possessive pronouns: mein, dein, sein, ihr",
+  "vocabulary": [
+    {
+      "word": "die Familie",
+      "translation": "the family"
+    },
+    {
+      "word": "die Mutter",
+      "translation": "the mother"
+    },
+    {
+      "word": "der Vater",
+      "translation": "the father"
+    },
+    {
+      "word": "die Eltern",
+      "translation": "the parents (plural)"
+    },
+    {
+      "word": "die Schwester",
+      "translation": "the sister"
+    },
+    {
+      "word": "der Bruder",
+      "translation": "the brother"
+    },
+    {
+      "word": "die Geschwister",
+      "translation": "siblings (plural)"
+    },
+    {
+      "word": "die Grossmutter",
+      "translation": "the grandmother"
+    },
+    {
+      "word": "der Grossvater",
+      "translation": "the grandfather"
+    },
+    {
+      "word": "die Grosseltern",
+      "translation": "grandparents (plural)"
+    },
+    {
+      "word": "der Sohn",
+      "translation": "the son"
+    },
+    {
+      "word": "die Tochter",
+      "translation": "the daughter"
+    },
+    {
+      "word": "verheiratet",
+      "translation": "married"
+    },
+    {
+      "word": "ledig",
+      "translation": "single"
+    },
+    {
+      "word": "Ich habe zwei Geschwister",
+      "translation": "I have two siblings"
+    }
+  ],
+  "grammar": {
+    "topic": "Possessive pronouns agree with the noun they describe",
+    "forms": {
+      "mein Vater (masc)": "my father",
+      "meine Mutter (fem)": "my mother",
+      "mein Kind (neuter)": "my child",
+      "meine Eltern (plural)": "my parents",
+      "sein/ihr": "his/her - agrees with owner not the thing owned"
+    }
+  },
+  "objectives": [
+    "Name family members",
+    "Use possessive pronouns correctly",
+    "Describe your family situation",
+    "Understand mein/meine agreement with noun gender"
+  ],
+  "nursing_note": "You will ask patients about their family situation for medical history. Haben Sie Kinder? Leben Ihre Eltern noch? are common intake questions.",
+  "mastery_pass_score": 80
+}

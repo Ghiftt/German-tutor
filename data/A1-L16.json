@@ -1,0 +1,92 @@
+{
+  "id": "A1-L16",
+  "title": "Gesundheit - Health and Body",
+  "level": "A1",
+  "chapter": "Health",
+  "grammar_topic": "haben + accusative for ailments, body parts with articles",
+  "vocabulary": [
+    {
+      "word": "der Koerper",
+      "translation": "the body"
+    },
+    {
+      "word": "der Kopf",
+      "translation": "the head"
+    },
+    {
+      "word": "der Hals",
+      "translation": "the throat / neck"
+    },
+    {
+      "word": "die Brust",
+      "translation": "the chest"
+    },
+    {
+      "word": "der Bauch",
+      "translation": "the stomach / abdomen"
+    },
+    {
+      "word": "der Ruecken",
+      "translation": "the back"
+    },
+    {
+      "word": "der Arm",
+      "translation": "the arm"
+    },
+    {
+      "word": "das Bein",
+      "translation": "the leg"
+    },
+    {
+      "word": "Ich habe Kopfschmerzen",
+      "translation": "I have a headache"
+    },
+    {
+      "word": "Ich habe Bauchschmerzen",
+      "translation": "I have stomach pain"
+    },
+    {
+      "word": "Mir ist schlecht",
+      "translation": "I feel sick / nauseous"
+    },
+    {
+      "word": "Ich habe Fieber",
+      "translation": "I have a fever"
+    },
+    {
+      "word": "Wo tut es weh?",
+      "translation": "Where does it hurt?"
+    },
+    {
+      "word": "Es tut hier weh",
+      "translation": "It hurts here"
+    },
+    {
+      "word": "Gute Besserung!",
+      "translation": "Get well soon!"
+    },
+    {
+      "word": "der Notfall",
+      "translation": "the emergency"
+    }
+  ],
+  "grammar": {
+    "topic": "Schmerzen compound words and mir ist + adjective",
+    "forms": {
+      "Kopf + Schmerzen = Kopfschmerzen": "headache - German compounds two nouns",
+      "Bauch + Schmerzen = Bauchschmerzen": "stomach ache",
+      "Mir ist schlecht": "I feel sick - mir (dative) not ich",
+      "Mir ist warm/kalt": "I am warm/cold - same dative pattern",
+      "Ich habe Fieber": "I have a fever - no article with Fieber"
+    }
+  },
+  "objectives": [
+    "Name all major body parts",
+    "Describe pain and symptoms",
+    "Ask where it hurts",
+    "Use mir ist for feelings",
+    "Know emergency vocabulary"
+  ],
+  "nursing_note": "This is the most critical A1 lesson for nursing. Wo tut es weh, Haben Sie Schmerzen, Ich rufe den Arzt - you need this from your first shift.",
+  "mastery_pass_score": 80
+}

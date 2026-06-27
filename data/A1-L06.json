@@ -1,0 +1,75 @@
+{
+  "id": "A1-L06",
+  "title": "Woher kommst du? - Countries and Languages",
+  "level": "A1",
+  "chapter": "Meeting People",
+  "grammar_topic": "Country names, nationalities, and language names",
+  "vocabulary": [
+    {
+      "word": "Nigeria",
+      "translation": "Nigeria"
+    },
+    {
+      "word": "Deutschland",
+      "translation": "Germany"
+    },
+    {
+      "word": "Oesterreich",
+      "translation": "Austria"
+    },
+    {
+      "word": "die Schweiz",
+      "translation": "Switzerland"
+    },
+    {
+      "word": "Ich komme aus Nigeria",
+      "translation": "I come from Nigeria"
+    },
+    {
+      "word": "Ich bin Nigerianerin",
+      "translation": "I am Nigerian (female)"
+    },
+    {
+      "word": "Ich bin Nigerianer",
+      "translation": "I am Nigerian (male)"
+    },
+    {
+      "word": "Ich spreche Englisch",
+      "translation": "I speak English"
+    },
+    {
+      "word": "Ich spreche Deutsch",
+      "translation": "I speak German"
+    },
+    {
+      "word": "Meine Muttersprache ist Englisch",
+      "translation": "My mother tongue is English"
+    },
+    {
+      "word": "Ich lerne Deutsch seit drei Monaten",
+      "translation": "I have been learning German for three months"
+    },
+    {
+      "word": "Welche Sprachen sprechen Sie?",
+      "translation": "What languages do you speak?"
+    }
+  ],
+  "grammar": {
+    "topic": "sprechen conjugation and seit + time",
+    "forms": {
+      "ich spreche": "I speak",
+      "du sprichst": "you speak (note vowel change e to i)",
+      "er/sie spricht": "he/she speaks (note vowel change)",
+      "seit drei Monaten": "for three months (seit = since/for with present tense)",
+      "seit einem Jahr": "for one year"
+    }
+  },
+  "objectives": [
+    "Say which country you come from",
+    "Name your nationality and language",
+    "Use sprechen with vowel change",
+    "Use seit to say how long you have been doing something"
+  ],
+  "nursing_note": "You will be asked about your background constantly in Germany. Practice this until it is automatic.",
+  "mastery_pass_score": 80
+}

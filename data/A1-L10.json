@@ -1,0 +1,82 @@
+{
+  "id": "A1-L10",
+  "title": "Berufe - Jobs and Professions",
+  "level": "A1",
+  "chapter": "Work",
+  "grammar_topic": "Professions with sein, masculine and feminine forms",
+  "vocabulary": [
+    {
+      "word": "der Beruf",
+      "translation": "the profession / job"
+    },
+    {
+      "word": "Was sind Sie von Beruf?",
+      "translation": "What is your profession?"
+    },
+    {
+      "word": "Ich bin Krankenpflegerin",
+      "translation": "I am a nurse (female) - no article!"
+    },
+    {
+      "word": "der Krankenpfleger",
+      "translation": "male nurse"
+    },
+    {
+      "word": "die Krankenpflegerin",
+      "translation": "female nurse"
+    },
+    {
+      "word": "der Arzt",
+      "translation": "doctor (male)"
+    },
+    {
+      "word": "die Aerztin",
+      "translation": "doctor (female)"
+    },
+    {
+      "word": "die Pflegehelferin",
+      "translation": "nursing assistant (female)"
+    },
+    {
+      "word": "die Station",
+      "translation": "the ward"
+    },
+    {
+      "word": "das Krankenhaus",
+      "translation": "the hospital"
+    },
+    {
+      "word": "die Ausbildung",
+      "translation": "the vocational training"
+    },
+    {
+      "word": "der Azubi",
+      "translation": "the apprentice / trainee"
+    },
+    {
+      "word": "arbeiten",
+      "translation": "to work"
+    },
+    {
+      "word": "Ich arbeite im Krankenhaus",
+      "translation": "I work in the hospital"
+    }
+  ],
+  "grammar": {
+    "topic": "Professions use NO article with sein",
+    "forms": {
+      "Ich bin Krankenpflegerin": "CORRECT - no article",
+      "Ich bin eine Krankenpflegerin": "WRONG for sein + profession",
+      "feminine form": "usually add -in to masculine: Pfleger -> Pflegerin",
+      "arbeiten": "ich arbeite, du arbeitest, er/sie arbeitet, wir arbeiten"
+    }
+  },
+  "objectives": [
+    "Say your profession and ask others",
+    "Use sein with professions without an article",
+    "Know key hospital job titles",
+    "Conjugate arbeiten"
+  ],
+  "nursing_note": "Ich bin Krankenpflegerin in Ausbildung (I am a nursing trainee) is how you introduce yourself professionally in Germany.",
+  "mastery_pass_score": 80
+}

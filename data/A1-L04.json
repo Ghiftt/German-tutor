@@ -1,0 +1,79 @@
+{
+  "id": "A1-L04",
+  "title": "Ich heisse Emma - Introducing Yourself",
+  "level": "A1",
+  "chapter": "Meeting People",
+  "grammar_topic": "Personal pronouns and heissen, kommen, wohnen",
+  "vocabulary": [
+    {
+      "word": "Ich heisse...",
+      "translation": "My name is... (I am called...)"
+    },
+    {
+      "word": "Wie heissen Sie?",
+      "translation": "What is your name? (formal)"
+    },
+    {
+      "word": "Wie heisst du?",
+      "translation": "What is your name? (informal)"
+    },
+    {
+      "word": "Ich komme aus...",
+      "translation": "I come from..."
+    },
+    {
+      "word": "Woher kommen Sie?",
+      "translation": "Where are you from? (formal)"
+    },
+    {
+      "word": "Ich wohne in...",
+      "translation": "I live in..."
+    },
+    {
+      "word": "Wo wohnen Sie?",
+      "translation": "Where do you live? (formal)"
+    },
+    {
+      "word": "Ich bin Krankenpflegerin",
+      "translation": "I am a nurse (female)"
+    },
+    {
+      "word": "Ich bin Krankenpfleger",
+      "translation": "I am a nurse (male)"
+    },
+    {
+      "word": "Ich lerne Deutsch",
+      "translation": "I am learning German"
+    },
+    {
+      "word": "Freut mich",
+      "translation": "Nice to meet you"
+    },
+    {
+      "word": "du",
+      "translation": "you (informal - friends, family, children)"
+    },
+    {
+      "word": "Sie",
+      "translation": "you (formal - always capitalized)"
+    }
+  ],
+  "grammar": {
+    "topic": "du vs Sie - informal vs formal address",
+    "forms": {
+      "du - friends, family, children": "Use with people you know well",
+      "Sie - doctors, patients, strangers": "Use with everyone else - always capitalize",
+      "heissen": "to be called: ich heisse, du heisst, er/sie heisst",
+      "kommen": "to come: ich komme, du kommst, er/sie kommt",
+      "wohnen": "to live: ich wohne, du wohnst, er/sie wohnt"
+    }
+  },
+  "objectives": [
+    "Introduce yourself with name, origin, and profession",
+    "Ask others for their name and origin",
+    "Use du and Sie correctly",
+    "Conjugate heissen, kommen, wohnen"
+  ],
+  "nursing_note": "In German hospitals you always use Sie with patients and senior colleagues. Using du with a patient you do not know is rude.",
+  "mastery_pass_score": 80
+}

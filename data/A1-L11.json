@@ -1,0 +1,87 @@
+{
+  "id": "A1-L11",
+  "title": "Essen und Trinken - Food and Drink",
+  "level": "A1",
+  "chapter": "Food",
+  "grammar_topic": "Accusative case with direct objects and moechten",
+  "vocabulary": [
+    {
+      "word": "das Fruehstueck",
+      "translation": "breakfast"
+    },
+    {
+      "word": "das Mittagessen",
+      "translation": "lunch"
+    },
+    {
+      "word": "das Abendessen",
+      "translation": "dinner"
+    },
+    {
+      "word": "das Brot",
+      "translation": "bread"
+    },
+    {
+      "word": "die Suppe",
+      "translation": "soup"
+    },
+    {
+      "word": "das Fleisch",
+      "translation": "meat"
+    },
+    {
+      "word": "das Gemuese",
+      "translation": "vegetables"
+    },
+    {
+      "word": "das Wasser",
+      "translation": "water"
+    },
+    {
+      "word": "der Kaffee",
+      "translation": "coffee"
+    },
+    {
+      "word": "der Tee",
+      "translation": "tea"
+    },
+    {
+      "word": "Ich moechte...",
+      "translation": "I would like..."
+    },
+    {
+      "word": "Ich esse kein Fleisch",
+      "translation": "I do not eat meat"
+    },
+    {
+      "word": "Haben Sie Allergien?",
+      "translation": "Do you have allergies?"
+    },
+    {
+      "word": "Ich bin vegetarisch",
+      "translation": "I am vegetarian"
+    },
+    {
+      "word": "zahlen bitte",
+      "translation": "the bill please"
+    }
+  ],
+  "grammar": {
+    "topic": "moechten (would like) and accusative for direct object",
+    "forms": {
+      "ich moechte": "I would like",
+      "du moechtest": "you would like",
+      "er/sie moechte": "he/she would like",
+      "accusative: der -> den": "Ich moechte den Kaffee",
+      "accusative: die/das unchanged": "Ich moechte die Suppe / das Brot"
+    }
+  },
+  "objectives": [
+    "Order food and drink politely",
+    "Say what you eat and do not eat",
+    "Use moechten correctly",
+    "Understand first accusative case rule: der becomes den"
+  ],
+  "nursing_note": "You will ask patients about their meals, allergies, and dietary restrictions daily. Haben Sie Allergien? is a standard intake question.",
+  "mastery_pass_score": 80
+}

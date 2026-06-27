@@ -1,0 +1,82 @@
+{
+  "id": "A1-L12",
+  "title": "Wohnen - Home and Living",
+  "level": "A1",
+  "chapter": "Home",
+  "grammar_topic": "Prepositions of place: in, an, auf, neben, vor, hinter, zwischen",
+  "vocabulary": [
+    {
+      "word": "die Wohnung",
+      "translation": "the apartment"
+    },
+    {
+      "word": "das Zimmer",
+      "translation": "the room"
+    },
+    {
+      "word": "das Schlafzimmer",
+      "translation": "the bedroom"
+    },
+    {
+      "word": "das Badezimmer",
+      "translation": "the bathroom"
+    },
+    {
+      "word": "die Kueche",
+      "translation": "the kitchen"
+    },
+    {
+      "word": "das Wohnzimmer",
+      "translation": "the living room"
+    },
+    {
+      "word": "das Bett",
+      "translation": "the bed"
+    },
+    {
+      "word": "der Schrank",
+      "translation": "the wardrobe"
+    },
+    {
+      "word": "der Tisch",
+      "translation": "the table"
+    },
+    {
+      "word": "der Stuhl",
+      "translation": "the chair"
+    },
+    {
+      "word": "links",
+      "translation": "on the left"
+    },
+    {
+      "word": "rechts",
+      "translation": "on the right"
+    },
+    {
+      "word": "geradeaus",
+      "translation": "straight ahead"
+    },
+    {
+      "word": "die WG (Wohngemeinschaft)",
+      "translation": "shared apartment - very common for Azubis"
+    }
+  ],
+  "grammar": {
+    "topic": "Two-way prepositions: dative for location, accusative for movement",
+    "forms": {
+      "Wo ist das Bett?": "Where is the bed? -> dative: Das Bett ist im Zimmer",
+      "Wohin gehst du?": "Where are you going? -> accusative: Ich gehe ins Zimmer",
+      "im = in + dem (dative)": "location",
+      "ins = in + das (accusative)": "movement towards"
+    }
+  },
+  "objectives": [
+    "Describe your home and rooms",
+    "Use prepositions of place correctly",
+    "Understand the location vs movement rule",
+    "Know WG vocabulary for your Ausbildung accommodation"
+  ],
+  "nursing_note": "Most Azubis live in a WG. Das Patientenzimmer (patient room), das Schwesternzimmer (nurses station) use the same room vocabulary.",
+  "mastery_pass_score": 80
+}

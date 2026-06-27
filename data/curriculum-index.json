@@ -1,0 +1,128 @@
+[
+  {
+    "id": "A1-L01",
+    "title": "Hallo! - Greetings",
+    "level": "A1",
+    "chapter": "Intro",
+    "grammar_topic": "Basic sentence structure: Ich bin, Das ist"
+  },
+  {
+    "id": "A1-L02",
+    "title": "Kein Problem! - Basic Sentences",
+    "level": "A1",
+    "chapter": "Intro",
+    "grammar_topic": "Verb position in statements and questions"
+  },
+  {
+    "id": "A1-L03",
+    "title": "Von A bis Z - The German Alphabet",
+    "level": "A1",
+    "chapter": "Intro",
+    "grammar_topic": "German alphabet and spelling"
+  },
+  {
+    "id": "A1-L04",
+    "title": "Ich heisse Emma - Introducing Yourself",
+    "level": "A1",
+    "chapter": "Meeting People",
+    "grammar_topic": "Personal pronouns and heissen, kommen, wohnen"
+  },
+  {
+    "id": "A1-L05",
+    "title": "Das ist Nico - Introducing Others",
+    "level": "A1",
+    "chapter": "Meeting People",
+    "grammar_topic": "Nominative articles der, die, das and indefinite ein, eine"
+  },
+  {
+    "id": "A1-L06",
+    "title": "Woher kommst du? - Countries and Languages",
+    "level": "A1",
+    "chapter": "Meeting People",
+    "grammar_topic": "Country names, nationalities, and language names"
+  },
+  {
+    "id": "A1-L07",
+    "title": "Zahlen 1-100 - Numbers",
+    "level": "A1",
+    "chapter": "Contact Details",
+    "grammar_topic": "Cardinal numbers and phone numbers"
+  },
+  {
+    "id": "A1-L08",
+    "title": "Uhrzeiten - Telling the Time",
+    "level": "A1",
+    "chapter": "Daily Life",
+    "grammar_topic": "Clock time - official and colloquial"
+  },
+  {
+    "id": "A1-L09",
+    "title": "Wochentage und Monate - Days and Months",
+    "level": "A1",
+    "chapter": "Daily Life",
+    "grammar_topic": "Days, months, dates, and am/im prepositions"
+  },
+  {
+    "id": "A1-L10",
+    "title": "Berufe - Jobs and Professions",
+    "level": "A1",
+    "chapter": "Work",
+    "grammar_topic": "Professions with sein, masculine and feminine forms"
+  },
+  {
+    "id": "A1-L11",
+    "title": "Essen und Trinken - Food and Drink",
+    "level": "A1",
+    "chapter": "Food",
+    "grammar_topic": "Accusative case with direct objects and moechten"
+  },
+  {
+    "id": "A1-L12",
+    "title": "Wohnen - Home and Living",
+    "level": "A1",
+    "chapter": "Home",
+    "grammar_topic": "Prepositions of place: in, an, auf, neben, vor, hinter, zwischen"
+  },
+  {
+    "id": "A1-L13",
+    "title": "Wegbeschreibung - Giving Directions",
+    "level": "A1",
+    "chapter": "Places",
+    "grammar_topic": "Imperative form and prepositions of direction"
+  },
+  {
+    "id": "A1-L14",
+    "title": "Familie - Family Members",
+    "level": "A1",
+    "chapter": "Family",
+    "grammar_topic": "Possessive pronouns: mein, dein, sein, ihr"
+  },
+  {
+    "id": "A1-L15",
+    "title": "Freizeit - Hobbies and Free Time",
+    "level": "A1",
+    "chapter": "Leisure",
+    "grammar_topic": "Modal verbs: koennen, moegen, wollen, muessen"
+  },
+  {
+    "id": "A1-L16",
+    "title": "Gesundheit - Health and Body",
+    "level": "A1",
+    "chapter": "Health",
+    "grammar_topic": "haben + accusative for ailments, body parts with articles"
+  },
+  {
+    "id": "A1-L17",
+    "title": "Einkaufen - Shopping",
+    "level": "A1",
+    "chapter": "Shopping",
+    "grammar_topic": "Prices, quantities, and accusative with einkaufen"
+  },
+  {
+    "id": "A1-L18",
+    "title": "Ich traeume von... - Wishes and Dreams",
+    "level": "A1",
+    "chapter": "Future Plans",
+    "grammar_topic": "wuerde gern, haette gern, and future with werden"
+  }
+]

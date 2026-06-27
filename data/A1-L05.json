@@ -1,0 +1,79 @@
+{
+  "id": "A1-L05",
+  "title": "Das ist Nico - Introducing Others",
+  "level": "A1",
+  "chapter": "Meeting People",
+  "grammar_topic": "Nominative articles der, die, das and indefinite ein, eine",
+  "vocabulary": [
+    {
+      "word": "Das ist...",
+      "translation": "This is..."
+    },
+    {
+      "word": "Das sind...",
+      "translation": "These are..."
+    },
+    {
+      "word": "der Mann",
+      "translation": "the man (masculine)"
+    },
+    {
+      "word": "die Frau",
+      "translation": "the woman (feminine)"
+    },
+    {
+      "word": "das Kind",
+      "translation": "the child (neuter)"
+    },
+    {
+      "word": "der Arzt",
+      "translation": "the doctor (male)"
+    },
+    {
+      "word": "die Aerztin",
+      "translation": "the doctor (female)"
+    },
+    {
+      "word": "die Krankenschwester",
+      "translation": "the nurse (female)"
+    },
+    {
+      "word": "der Krankenpfleger",
+      "translation": "the nurse (male)"
+    },
+    {
+      "word": "der Patient",
+      "translation": "the patient (male)"
+    },
+    {
+      "word": "die Patientin",
+      "translation": "the patient (female)"
+    },
+    {
+      "word": "ein Kollege",
+      "translation": "a colleague (male)"
+    },
+    {
+      "word": "eine Kollegin",
+      "translation": "a colleague (female)"
+    }
+  ],
+  "grammar": {
+    "topic": "German articles - the hardest rule in A1",
+    "forms": {
+      "der (masculine)": "der Mann, der Arzt, der Patient",
+      "die (feminine)": "die Frau, die Aerztin, die Krankenschwester",
+      "das (neuter)": "das Kind, das Krankenhaus, das Zimmer",
+      "die (plural)": "die Maenner, die Frauen, die Kinder",
+      "Rule": "Always learn the article WITH the noun. Never learn a noun alone."
+    }
+  },
+  "objectives": [
+    "Introduce other people",
+    "Use der, die, das correctly with common nouns",
+    "Learn key hospital people vocabulary",
+    "Understand that articles must be memorized with each noun"
+  ],
+  "nursing_note": "Das Krankenhaus (hospital), das Zimmer (room), die Station (ward), der Patient - you will use these from day one.",
+  "mastery_pass_score": 80
+}

@@ -1,0 +1,87 @@
+{
+  "id": "A1-L08",
+  "title": "Uhrzeiten - Telling the Time",
+  "level": "A1",
+  "chapter": "Daily Life",
+  "grammar_topic": "Clock time - official and colloquial",
+  "vocabulary": [
+    {
+      "word": "Wie spaet ist es?",
+      "translation": "What time is it?"
+    },
+    {
+      "word": "Es ist acht Uhr",
+      "translation": "It is 8 o'clock"
+    },
+    {
+      "word": "Es ist halb neun",
+      "translation": "It is half past eight (lit: half nine)"
+    },
+    {
+      "word": "Es ist Viertel nach acht",
+      "translation": "It is quarter past eight"
+    },
+    {
+      "word": "Es ist Viertel vor neun",
+      "translation": "It is quarter to nine"
+    },
+    {
+      "word": "Um wie viel Uhr?",
+      "translation": "At what time?"
+    },
+    {
+      "word": "Um 14:00 Uhr",
+      "translation": "At 14:00 (2pm) - official/24h time"
+    },
+    {
+      "word": "morgens",
+      "translation": "in the morning"
+    },
+    {
+      "word": "mittags",
+      "translation": "at midday"
+    },
+    {
+      "word": "nachmittags",
+      "translation": "in the afternoon"
+    },
+    {
+      "word": "abends",
+      "translation": "in the evening"
+    },
+    {
+      "word": "nachts",
+      "translation": "at night"
+    },
+    {
+      "word": "die Spaetschicht",
+      "translation": "the late shift"
+    },
+    {
+      "word": "die Fruehschicht",
+      "translation": "the early shift"
+    },
+    {
+      "word": "die Nachtschicht",
+      "translation": "the night shift"
+    }
+  ],
+  "grammar": {
+    "topic": "halb - the tricky German half hour",
+    "forms": {
+      "halb neun": "8:30 NOT 9:30 - half BEFORE the next hour",
+      "halb drei": "2:30",
+      "halb zwoelf": "11:30",
+      "Official time": "In hospitals always use 24h: acht Uhr dreissig, vierzehn Uhr",
+      "Schicht beginnt um 6:00 Uhr": "Shift starts at 6:00"
+    }
+  },
+  "objectives": [
+    "Tell and ask the time in German",
+    "Understand halb (half hour) correctly",
+    "Use 24-hour official time for work",
+    "Name the three nursing shifts"
+  ],
+  "nursing_note": "Shift handovers happen at exact times. Getting halb wrong means arriving an hour late. This is critical.",
+  "mastery_pass_score": 80
+}

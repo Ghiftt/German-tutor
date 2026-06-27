@@ -1,0 +1,115 @@
+{
+  "id": "A1-L09",
+  "title": "Wochentage und Monate - Days and Months",
+  "level": "A1",
+  "chapter": "Daily Life",
+  "grammar_topic": "Days, months, dates, and am/im prepositions",
+  "vocabulary": [
+    {
+      "word": "Montag",
+      "translation": "Monday"
+    },
+    {
+      "word": "Dienstag",
+      "translation": "Tuesday"
+    },
+    {
+      "word": "Mittwoch",
+      "translation": "Wednesday"
+    },
+    {
+      "word": "Donnerstag",
+      "translation": "Thursday"
+    },
+    {
+      "word": "Freitag",
+      "translation": "Friday"
+    },
+    {
+      "word": "Samstag",
+      "translation": "Saturday"
+    },
+    {
+      "word": "Sonntag",
+      "translation": "Sunday"
+    },
+    {
+      "word": "Januar",
+      "translation": "January"
+    },
+    {
+      "word": "Februar",
+      "translation": "February"
+    },
+    {
+      "word": "Maerz",
+      "translation": "March"
+    },
+    {
+      "word": "April",
+      "translation": "April"
+    },
+    {
+      "word": "Mai",
+      "translation": "May"
+    },
+    {
+      "word": "Juni",
+      "translation": "June"
+    },
+    {
+      "word": "Juli",
+      "translation": "July"
+    },
+    {
+      "word": "August",
+      "translation": "August"
+    },
+    {
+      "word": "September",
+      "translation": "September"
+    },
+    {
+      "word": "Oktober",
+      "translation": "October"
+    },
+    {
+      "word": "November",
+      "translation": "November"
+    },
+    {
+      "word": "Dezember",
+      "translation": "December"
+    },
+    {
+      "word": "heute",
+      "translation": "today"
+    },
+    {
+      "word": "morgen",
+      "translation": "tomorrow"
+    },
+    {
+      "word": "gestern",
+      "translation": "yesterday"
+    }
+  ],
+  "grammar": {
+    "topic": "am for days, im for months",
+    "forms": {
+      "am Montag": "on Monday - am = an + dem",
+      "am Wochenende": "at the weekend",
+      "im Januar": "in January",
+      "im Sommer": "in summer",
+      "am 3. Mai": "on the 3rd of May - ordinal numbers end in -ten/-sten"
+    }
+  },
+  "objectives": [
+    "Name all days of the week and months",
+    "Use am with days and im with months",
+    "Say today, tomorrow, yesterday",
+    "Read and write simple dates"
+  ],
+  "nursing_note": "You will document dates on patient charts, schedule shifts, and book appointments. Days and months must be perfect.",
+  "mastery_pass_score": 80
+}

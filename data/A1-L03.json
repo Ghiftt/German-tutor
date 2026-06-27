@@ -1,0 +1,146 @@
+{
+  "id": "A1-L03",
+  "title": "Von A bis Z - The German Alphabet",
+  "level": "A1",
+  "chapter": "Intro",
+  "grammar_topic": "German alphabet and spelling",
+  "vocabulary": [
+    {
+      "word": "A - Anton",
+      "translation": "A as in Anton"
+    },
+    {
+      "word": "B - Berta",
+      "translation": "B as in Berta"
+    },
+    {
+      "word": "C - Caesar",
+      "translation": "C as in Caesar"
+    },
+    {
+      "word": "D - Dora",
+      "translation": "D as in Dora"
+    },
+    {
+      "word": "E - Emil",
+      "translation": "E as in Emil"
+    },
+    {
+      "word": "F - Friedrich",
+      "translation": "F as in Friedrich"
+    },
+    {
+      "word": "G - Gustav",
+      "translation": "G as in Gustav"
+    },
+    {
+      "word": "H - Heinrich",
+      "translation": "H as in Heinrich"
+    },
+    {
+      "word": "I - Ida",
+      "translation": "I as in Ida"
+    },
+    {
+      "word": "J - Julius",
+      "translation": "J as in Julius"
+    },
+    {
+      "word": "K - Kaufmann",
+      "translation": "K as in Kaufmann"
+    },
+    {
+      "word": "L - Ludwig",
+      "translation": "L as in Ludwig"
+    },
+    {
+      "word": "M - Martha",
+      "translation": "M as in Martha"
+    },
+    {
+      "word": "N - Nordpol",
+      "translation": "N as in Nordpol"
+    },
+    {
+      "word": "O - Otto",
+      "translation": "O as in Otto"
+    },
+    {
+      "word": "P - Paula",
+      "translation": "P as in Paula"
+    },
+    {
+      "word": "Q - Quelle",
+      "translation": "Q as in Quelle"
+    },
+    {
+      "word": "R - Richard",
+      "translation": "R as in Richard"
+    },
+    {
+      "word": "S - Samuel",
+      "translation": "S as in Samuel"
+    },
+    {
+      "word": "T - Theodor",
+      "translation": "T as in Theodor"
+    },
+    {
+      "word": "U - Ulrich",
+      "translation": "U as in Ulrich"
+    },
+    {
+      "word": "V - Viktor",
+      "translation": "V as in Viktor"
+    },
+    {
+      "word": "W - Wilhelm",
+      "translation": "W as in Wilhelm"
+    },
+    {
+      "word": "X - Xanthippe",
+      "translation": "X as in Xanthippe"
+    },
+    {
+      "word": "Y - Ypsilon",
+      "translation": "Y as in Ypsilon"
+    },
+    {
+      "word": "Z - Zacharias",
+      "translation": "Z as in Zacharias"
+    },
+    {
+      "word": "Ae - Umlaut A",
+      "translation": "ae sound (Arzt, Affe)"
+    },
+    {
+      "word": "Oe - Umlaut O",
+      "translation": "oe sound (schoen, offen)"
+    },
+    {
+      "word": "Ue - Umlaut U",
+      "translation": "ue sound (ueber, Tuer)"
+    },
+    {
+      "word": "ss - Eszett",
+      "translation": "ss sound (heissen, Strasse)"
+    }
+  ],
+  "grammar": {
+    "topic": "German spelling conventions",
+    "forms": {
+      "Wie schreibt man das?": "How do you spell that?",
+      "Buchstabieren Sie bitte": "Please spell it",
+      "Gross- und Kleinschreibung": "Capitalization - ALL nouns are capitalized",
+      "Der, die, das": "All nouns have a gender - must be learned with each word"
+    }
+  },
+  "objectives": [
+    "Recite and recognize all German letters",
+    "Spell your name and words letter by letter",
+    "Understand German umlaut sounds ae, oe, ue and ss",
+    "Know that all German nouns are capitalized"
+  ],
+  "nursing_note": "You will spell patient names, medication names, and read German documents daily. The alphabet is not optional.",
+  "mastery_pass_score": 80
+}

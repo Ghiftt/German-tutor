@@ -1,0 +1,83 @@
+{
+  "id": "A1-L15",
+  "title": "Freizeit - Hobbies and Free Time",
+  "level": "A1",
+  "chapter": "Leisure",
+  "grammar_topic": "Modal verbs: koennen, moegen, wollen, muessen",
+  "vocabulary": [
+    {
+      "word": "die Freizeit",
+      "translation": "free time"
+    },
+    {
+      "word": "das Hobby",
+      "translation": "hobby"
+    },
+    {
+      "word": "Sport treiben",
+      "translation": "to do sport"
+    },
+    {
+      "word": "lesen",
+      "translation": "to read"
+    },
+    {
+      "word": "Musik hoeren",
+      "translation": "to listen to music"
+    },
+    {
+      "word": "kochen",
+      "translation": "to cook"
+    },
+    {
+      "word": "tanzen",
+      "translation": "to dance"
+    },
+    {
+      "word": "ins Kino gehen",
+      "translation": "to go to the cinema"
+    },
+    {
+      "word": "ich mag",
+      "translation": "I like"
+    },
+    {
+      "word": "ich mag nicht",
+      "translation": "I do not like"
+    },
+    {
+      "word": "ich kann",
+      "translation": "I can"
+    },
+    {
+      "word": "ich will",
+      "translation": "I want to"
+    },
+    {
+      "word": "ich muss",
+      "translation": "I must / have to"
+    },
+    {
+      "word": "Was machst du in der Freizeit?",
+      "translation": "What do you do in your free time?"
+    }
+  ],
+  "grammar": {
+    "topic": "Modal verbs - verb goes to end of sentence",
+    "forms": {
+      "koennen": "can: ich kann, du kannst, er/sie kann",
+      "moegen": "to like: ich mag, du magst, er/sie mag",
+      "wollen": "to want: ich will, du willst, er/sie will",
+      "muessen": "must: ich muss, du musst, er/sie muss",
+      "Word order": "Modal verb is second, infinitive goes to END: Ich kann Deutsch sprechen"
+    }
+  },
+  "objectives": [
+    "Talk about hobbies and free time",
+    "Use modal verbs koennen, moegen, wollen, muessen",
+    "Apply the modal verb word order rule",
+    "Ask and answer questions about free time"
+  ],
+  "nursing_note": "Ich muss arbeiten, Ich kann nicht kommen - modal verbs are used constantly in workplace communication.",
+  "mastery_pass_score": 80
+}

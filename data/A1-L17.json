@@ -1,0 +1,79 @@
+{
+  "id": "A1-L17",
+  "title": "Einkaufen - Shopping",
+  "level": "A1",
+  "chapter": "Shopping",
+  "grammar_topic": "Prices, quantities, and accusative with einkaufen",
+  "vocabulary": [
+    {
+      "word": "der Supermarkt",
+      "translation": "the supermarket"
+    },
+    {
+      "word": "die Apotheke",
+      "translation": "the pharmacy"
+    },
+    {
+      "word": "Was kostet das?",
+      "translation": "How much does that cost?"
+    },
+    {
+      "word": "Das kostet 5 Euro",
+      "translation": "That costs 5 euros"
+    },
+    {
+      "word": "Ich nehme das",
+      "translation": "I will take that"
+    },
+    {
+      "word": "Haben Sie...?",
+      "translation": "Do you have...?"
+    },
+    {
+      "word": "ein Kilo",
+      "translation": "one kilogram"
+    },
+    {
+      "word": "eine Flasche",
+      "translation": "a bottle"
+    },
+    {
+      "word": "eine Packung",
+      "translation": "a packet"
+    },
+    {
+      "word": "zu teuer",
+      "translation": "too expensive"
+    },
+    {
+      "word": "guenstig",
+      "translation": "cheap / affordable"
+    },
+    {
+      "word": "die Kasse",
+      "translation": "the checkout / cash register"
+    },
+    {
+      "word": "Kann ich mit Karte zahlen?",
+      "translation": "Can I pay by card?"
+    }
+  ],
+  "grammar": {
+    "topic": "Accusative: definite article der changes to den",
+    "forms": {
+      "Ich kaufe den Apfel (masc -> den)": "I buy the apple",
+      "Ich kaufe die Milch (fem -> die)": "I buy the milk",
+      "Ich kaufe das Brot (neuter -> das)": "I buy the bread",
+      "Ich kaufe die Aepfel (plural -> die)": "I buy the apples",
+      "Summary": "Only masculine changes in accusative: der -> den"
+    }
+  },
+  "objectives": [
+    "Ask prices and buy things",
+    "Use quantities and containers",
+    "Apply accusative case for masculine nouns",
+    "Shop at a supermarket and pharmacy"
+  ],
+  "nursing_note": "The Apotheke (pharmacy) is where you will buy personal items and where patients get prescriptions. Knowing pharmacy vocabulary is practical immediately.",
+  "mastery_pass_score": 80
+}

@@ -1,0 +1,119 @@
+{
+  "id": "A1-L07",
+  "title": "Zahlen 1-100 - Numbers",
+  "level": "A1",
+  "chapter": "Contact Details",
+  "grammar_topic": "Cardinal numbers and phone numbers",
+  "vocabulary": [
+    {
+      "word": "eins",
+      "translation": "1"
+    },
+    {
+      "word": "zwei",
+      "translation": "2"
+    },
+    {
+      "word": "drei",
+      "translation": "3"
+    },
+    {
+      "word": "vier",
+      "translation": "4"
+    },
+    {
+      "word": "fuenf",
+      "translation": "5"
+    },
+    {
+      "word": "sechs",
+      "translation": "6"
+    },
+    {
+      "word": "sieben",
+      "translation": "7"
+    },
+    {
+      "word": "acht",
+      "translation": "8"
+    },
+    {
+      "word": "neun",
+      "translation": "9"
+    },
+    {
+      "word": "zehn",
+      "translation": "10"
+    },
+    {
+      "word": "elf",
+      "translation": "11"
+    },
+    {
+      "word": "zwoelf",
+      "translation": "12"
+    },
+    {
+      "word": "zwanzig",
+      "translation": "20"
+    },
+    {
+      "word": "dreissig",
+      "translation": "30"
+    },
+    {
+      "word": "vierzig",
+      "translation": "40"
+    },
+    {
+      "word": "fuenfzig",
+      "translation": "50"
+    },
+    {
+      "word": "sechzig",
+      "translation": "60"
+    },
+    {
+      "word": "siebzig",
+      "translation": "70"
+    },
+    {
+      "word": "achtzig",
+      "translation": "80"
+    },
+    {
+      "word": "neunzig",
+      "translation": "90"
+    },
+    {
+      "word": "hundert",
+      "translation": "100"
+    },
+    {
+      "word": "einundzwanzig",
+      "translation": "21 - note: ones before tens"
+    },
+    {
+      "word": "vierundvierzig",
+      "translation": "44 - four and forty"
+    }
+  ],
+  "grammar": {
+    "topic": "German number construction",
+    "forms": {
+      "1-12": "Irregular - must memorize: eins, zwei, drei, vier, fuenf, sechs, sieben, acht, neun, zehn, elf, zwoelf",
+      "13-19": "Add -zehn: dreizehn, vierzehn, fuenfzehn...",
+      "20, 30, 40...": "zwanzig, dreissig, vierzig, fuenfzig, sechzig, siebzig, achtzig, neunzig",
+      "21, 22...": "ones + und + tens: einundzwanzig, zweiundzwanzig",
+      "Important": "German says 21 as 'one-and-twenty' not 'twenty-one'"
+    }
+  },
+  "objectives": [
+    "Count from 1 to 100",
+    "Give and understand phone numbers",
+    "Understand German number construction (ones before tens)",
+    "Use numbers for addresses and room numbers"
+  ],
+  "nursing_note": "Room numbers, patient ages, medication doses, vital signs - numbers are everywhere in nursing. Get these perfect.",
+  "mastery_pass_score": 80
+}
