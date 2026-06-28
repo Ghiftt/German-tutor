@@ -20,7 +20,7 @@ function lsGet(key: string): string | null {
 
 function MessageList({ messages, loading, speaking, setSpeaking, bottomRef }: {
   messages: Message[]; loading: boolean; speaking: boolean;
-  setSpeaking: (v: boolean) => void; bottomRef: React.RefObject<HTMLDivElement>;
+  setSpeaking: (v: boolean) => void; bottomRef: React.RefObject<HTMLDivElement | null>;
 }) {
   return (
     <div style={{ flex: 1, overflowY: "auto", padding: "16px", display: "flex", flexDirection: "column", gap: "12px" }}>
