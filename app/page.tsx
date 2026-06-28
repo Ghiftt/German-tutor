@@ -34,7 +34,7 @@ export default function Home() {
     const savedLessonId = lsGet("dt_lesson_id") || "A1-L01"
     const savedMessages = lsGet("dt_messages")
     const savedSession = lsGet("dt_session")
-    if (savedMessages) { try { setMessages(JSON.parse(savedMessages)); } catch {} }
+    if (savedMessages) { try { setMessages(JSON.parse(savedMessages) as Message[]); } catch {} }
     if (savedSession) { try { setSession(JSON.parse(savedSession)); } catch {} }
     fetch("/api/lesson?id=" + savedLessonId).then(r => r.json()).then(d => {
       if (d.lesson) setCurrentLesson(d.lesson);
@@ -84,7 +84,7 @@ lsSet("dt_session", JSON.stringify(newSession));
       });
       const data = await res.json();
       const updatedSession = mergeSession(session, data.sessionUpdate ?? {});
-      const updatedMessages = [...newMessages, { role: "assistant", content: data.response ?? "" }];
+      const updatedMessages: Message[] = [...newMessages, { role: "assistant" as const, content: data.response ?? "" }];
       setSession(updatedSession);
       setMessages(updatedMessages);
       lsSet("dt_messages", JSON.stringify(updatedMessages));
