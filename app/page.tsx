@@ -182,6 +182,10 @@ export default function Home() {
   const [showCurriculum, setShowCurriculum] = useState(false);
   const [activeTab, setActiveTab] = useState<"chat" | "lesson" | "progress">("chat");
   const [isMobile, setIsMobile] = useState(false);
+  const [student, setStudent] = useState<any>(null);
+  const [flaggedWords, setFlaggedWords] = useState<any[]>([]);
+  const [completedLessons, setCompletedLessons] = useState<string[]>([]);
+  const [dbSessionId, setDbSessionId] = useState<string | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -201,6 +205,11 @@ export default function Home() {
     if (savedSession) { try { setSession(JSON.parse(savedSession)); } catch {} }
     fetch("/api/lesson?id=" + savedLessonId).then(r => r.json()).then(d => {
       if (d.lesson) setCurrentLesson(d.lesson);
+    });
+    fetch("/api/session").then(r => r.json()).then(d => {
+      if (d.student) setStudent(d.student);
+      if (d.flaggedWords) setFlaggedWords(d.flaggedWords);
+      if (d.completedLessons) setCompletedLessons(d.completedLessons);
     });
   }, []);
 
@@ -238,6 +247,13 @@ export default function Home() {
     if (!userMessage || loading) return;
     setInput("");
     setLoading(true);
+    if (student && currentLesson && !dbSessionId) {
+      fetch("/api/session", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "start_session", studentId: student.id, lessonId: currentLesson.id })
+      }).then(r => r.json()).then(d => { if (d.session) setDbSessionId(d.session.id); });
+    }
     setMessages(prev => {
       const newMessages: Message[] = [...prev, { role: "user", content: userMessage }];
       fetch("/api/chat", {
