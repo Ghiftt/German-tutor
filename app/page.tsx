@@ -16,8 +16,6 @@ function lsGet(key: string): string | null {
   return null;
 }
 
-// ── Panels defined OUTSIDE Home so they never remount on state change ──
-
 function MessageList({ messages, loading, speaking, setSpeaking, bottomRef }: {
   messages: Message[]; loading: boolean; speaking: boolean;
   setSpeaking: (v: boolean) => void; bottomRef: React.RefObject<HTMLDivElement | null>;
@@ -119,8 +117,8 @@ function LessonPanel({ lesson, startSpeaking }: { lesson: any; startSpeaking: (w
   );
 }
 
-function ProgressPanel({ session, lesson, masteryColor, circumference, accuracy, total }: {
-  session: Session; lesson: any; masteryColor: string; circumference: number; accuracy: number; total: number;
+function ProgressPanel({ session, lesson, masteryColor, circumference, accuracy, total, stage }: {
+  session: Session; lesson: any; masteryColor: string; circumference: number; accuracy: number; total: number; stage: string;
 }) {
   return (
     <div style={{ flex: 1, overflowY: "auto", padding: "12px 16px", display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -136,7 +134,7 @@ function ProgressPanel({ session, lesson, masteryColor, circumference, accuracy,
             <div style={{ fontSize: "9px", color: COLORS.muted }}>/ 100</div>
           </div>
         </div>
-        <div style={{ fontSize: "11px", color: COLORS.muted, textAlign: "center" }}>{(session as any).stage ?? "INTRODUCTION"}</div>
+        <div style={{ fontSize: "11px", color: COLORS.accentLight, textAlign: "center", fontWeight: 600 }}>{stage.replace(/_/g, " ")}</div>
         <div style={{ fontSize: "11px", color: session.mastery >= 80 ? COLORS.accentLight : COLORS.muted, textAlign: "center" }}>{session.mastery >= 80 ? "Pass mark reached (80%)" : session.mastery > 0 ? "Need " + (80 - session.mastery) + " more points to pass" : "Complete the lesson to see your score"}</div>
       </div>
       <div style={{ background: COLORS.card, borderRadius: "12px", padding: "14px", border: "1px solid " + COLORS.border }}>
@@ -167,8 +165,6 @@ function ProgressPanel({ session, lesson, masteryColor, circumference, accuracy,
   );
 }
 
-// ── Main component ──
-
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([{ role: "assistant", content: "Hallo! I am your German tutor. I will take you from A1 all the way to C1 - the level you need for nursing Ausbildung in Germany.\n\nLet us begin with Lesson 1: Greetings and Introductions.\n\nAre you ready to start?" }]);
   const [input, setInput] = useState("");
@@ -186,6 +182,28 @@ export default function Home() {
   const [flaggedWords, setFlaggedWords] = useState<any[]>([]);
   const [completedLessons, setCompletedLessons] = useState<string[]>([]);
   const [dbSessionId, setDbSessionId] = useState<string | null>(null);
+  const [sessionState, setSessionState] = useState<any>({
+    stage: "MORNING_HANDOVER",
+    lessonId: "A1-L01",
+    lessonTitle: "Hallo! - Greetings",
+    startedAt: Date.now(),
+    stageStartedAt: Date.now(),
+    correct: 0,
+    incorrect: 0,
+    pronunciationScores: [],
+    weakWords: [],
+    masteredWords: [],
+    flaggedFromPrevious: [],
+    handoverComplete: false,
+    teachComplete: false,
+    guidedComplete: false,
+    practiceComplete: false,
+    listeningComplete: false,
+    speakingComplete: false,
+    assessmentScore: 0,
+    passed: false,
+    timeSpentSeconds: 0,
+  });
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -226,6 +244,21 @@ export default function Home() {
       setMessages(newMessages);
       setShowCurriculum(false);
       setActiveTab("chat");
+      setDbSessionId(null);
+      setSessionState((prev: any) => ({
+        ...prev,
+        stage: "MORNING_HANDOVER",
+        lessonId: data.lesson.id,
+        lessonTitle: data.lesson.title,
+        startedAt: Date.now(),
+        stageStartedAt: Date.now(),
+        correct: 0,
+        incorrect: 0,
+        weakWords: [],
+        masteredWords: [],
+        assessmentScore: 0,
+        passed: false,
+      }));
       lsSet("dt_lesson_id", data.lesson.id);
       lsSet("dt_messages", JSON.stringify(newMessages));
       lsSet("dt_session", JSON.stringify(newSession));
@@ -259,14 +292,30 @@ export default function Home() {
       fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage, conversationHistory: prev.map(m => ({ role: m.role, content: m.content })), lesson: currentLesson, session })
+        body: JSON.stringify({
+          message: userMessage,
+          conversationHistory: prev.map(m => ({ role: m.role, content: m.content })),
+          lesson: currentLesson,
+          session,
+          sessionState
+        })
       }).then(r => r.json()).then(data => {
-        const updatedSession = mergeSession(session, data.sessionUpdate ?? {});
+        const update = data.sessionUpdate ?? {};
+        const updatedSession = mergeSession(session, update);
         const updatedMessages: Message[] = [...newMessages, { role: "assistant" as const, content: data.response ?? "" }];
         setSession(updatedSession);
         setMessages(updatedMessages);
         lsSet("dt_messages", JSON.stringify(updatedMessages));
         lsSet("dt_session", JSON.stringify(updatedSession));
+        if (update.stage) {
+          setSessionState((prev: any) => ({
+            ...prev,
+            stage: update.stage,
+            correct: update.correct ?? prev.correct,
+            incorrect: update.incorrect ?? prev.incorrect,
+            assessmentScore: update.assessment_score ?? prev.assessmentScore,
+          }));
+        }
         setLoading(false);
       }).catch(() => {
         setMessages(m => [...m, { role: "assistant", content: "Something went wrong. Please try again." }]);
@@ -274,7 +323,7 @@ export default function Home() {
       });
       return newMessages;
     });
-  }, [input, loading, currentLesson, session]);
+  }, [input, loading, currentLesson, session, sessionState, student, dbSessionId]);
 
   async function startSpeaking(expected: string) {
     try {
@@ -299,7 +348,7 @@ export default function Home() {
             setMessages(prev => [...prev, { role: "assistant", content: "Could not process audio. Please try again." }]);
           } else {
             setMessages(prev => [...prev, { role: "assistant", content: data.feedback }]);
-            if (data.score > 0) await sendMessage(`[SPOKEN] ${data.spoken}`);
+            if (data.score > 0) await sendMessage("[SPOKEN] " + data.spoken);
             setTimeout(() => {
               const u = new SpeechSynthesisUtterance(expected);
               u.lang = "de-DE"; u.rate = 1.1;
@@ -360,9 +409,14 @@ export default function Home() {
             {!isMobile && <div style={{ fontSize: "10px", color: COLORS.muted }}>A1 to C1 - Nursing Ausbildung Prep</div>}
           </div>
         </div>
-        <div onClick={() => setShowCurriculum(true)} style={{ display: "flex", alignItems: "center", gap: "6px", background: COLORS.accentDim, border: "1px solid " + COLORS.accent, borderRadius: "20px", padding: isMobile ? "6px 10px" : "7px 14px", cursor: "pointer" }}>
-          <div style={{ width: "7px", height: "7px", borderRadius: "50%", background: COLORS.accentLight }} />
-          <span style={{ fontSize: isMobile ? "11px" : "12px", color: COLORS.accentLight, fontWeight: 600 }}>{lesson ? lesson.id + " - " + lesson.level : "Loading..."}{!isMobile && " - tap to change"}</span>
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <div style={{ fontSize: "11px", color: COLORS.accentLight, fontWeight: 700, background: COLORS.accentDim, border: "1px solid " + COLORS.accent, borderRadius: "12px", padding: "4px 10px" }}>
+            {sessionState.stage.replace(/_/g, " ")}
+          </div>
+          <div onClick={() => setShowCurriculum(true)} style={{ display: "flex", alignItems: "center", gap: "6px", background: COLORS.accentDim, border: "1px solid " + COLORS.accent, borderRadius: "20px", padding: isMobile ? "6px 10px" : "7px 14px", cursor: "pointer" }}>
+            <div style={{ width: "7px", height: "7px", borderRadius: "50%", background: COLORS.accentLight }} />
+            <span style={{ fontSize: isMobile ? "11px" : "12px", color: COLORS.accentLight, fontWeight: 600 }}>{lesson ? lesson.id + " - " + lesson.level : "Loading..."}{!isMobile && " - tap to change"}</span>
+          </div>
         </div>
       </div>
 
@@ -396,7 +450,7 @@ export default function Home() {
               <LessonPanel lesson={lesson} startSpeaking={startSpeaking} />
             </div>
           )}
-          {activeTab === "progress" && <ProgressPanel session={session} lesson={lesson} masteryColor={masteryColor} circumference={circumference} accuracy={accuracy} total={total} />}
+          {activeTab === "progress" && <ProgressPanel session={session} lesson={lesson} masteryColor={masteryColor} circumference={circumference} accuracy={accuracy} total={total} stage={sessionState.stage} />}
         </div>
       ) : (
         <div style={{ display: "flex", flex: 1, overflow: "hidden" }}>
@@ -420,7 +474,7 @@ export default function Home() {
             <div style={{ padding: "12px 16px", borderBottom: "1px solid " + COLORS.border, background: COLORS.surface, flexShrink: 0 }}>
               <div style={{ fontSize: "13px", fontWeight: 600, display: "flex", alignItems: "center", gap: "6px" }}><BarChart2 size={14} color={COLORS.accentLight} />Session Progress</div>
             </div>
-            <ProgressPanel session={session} lesson={lesson} masteryColor={masteryColor} circumference={circumference} accuracy={accuracy} total={total} />
+            <ProgressPanel session={session} lesson={lesson} masteryColor={masteryColor} circumference={circumference} accuracy={accuracy} total={total} stage={sessionState.stage} />
           </div>
         </div>
       )}
