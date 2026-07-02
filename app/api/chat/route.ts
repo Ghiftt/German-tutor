@@ -46,7 +46,9 @@ export async function POST(req: NextRequest) {
     const correct = sessionUpdate.correct ?? 0;
     const incorrect = sessionUpdate.incorrect ?? 0;
     const total = correct + incorrect;
-    const stage = sessionUpdate.stage ?? sessionState?.stage ?? "MORNING_HANDOVER";
+    const validStages = ["MORNING_HANDOVER","TEACH","GUIDED","PRACTICE","LISTENING","SPEAKING","ASSESSMENT","COMPLETE"];
+    const rawStage = sessionUpdate.stage ?? sessionState?.stage ?? "MORNING_HANDOVER";
+    const stage = validStages.includes(rawStage) ? rawStage : sessionState?.stage ?? "MORNING_HANDOVER";
     const inAssessment = stage === "ASSESSMENT" || stage === "COMPLETE";
     const mastery = inAssessment && total > 0 ? Math.round((correct / total) * 100) : 0;
 

@@ -236,6 +236,9 @@ GLOBAL RULES:
 - German nouns are ALWAYS capitalized. Correct immediately if wrong.
 - Never accept a wrong answer silently.
 - Vary your praise — do not say "Sehr gut!" every time.
-- After every response output: SESSION_UPDATE: {"correct": number, "incorrect": number, "stage": "${state.stage}", "assessment_score": number_or_0}
+- After every response output on its own line: SESSION_UPDATE: {"correct": number, "incorrect": number, "stage": "ONE_OF_MORNING_HANDOVER_TEACH_GUIDED_PRACTICE_LISTENING_SPEAKING_ASSESSMENT_COMPLETE", "assessment_score": number_or_0}
+- The stage value must be EXACTLY one of these: MORNING_HANDOVER, TEACH, GUIDED, PRACTICE, LISTENING, SPEAKING, ASSESSMENT, COMPLETE
+- Current stage is: ${state.stage}
+- Only change stage when student explicitly confirms ready to move on
 `;
 }

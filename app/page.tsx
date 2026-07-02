@@ -16,9 +16,10 @@ function lsGet(key: string): string | null {
   return null;
 }
 
-function MessageList({ messages, loading, speaking, setSpeaking, bottomRef }: {
+function MessageList({ messages, loading, speaking, setSpeaking, bottomRef, onAdvanceStage, currentStage }: {
   messages: Message[]; loading: boolean; speaking: boolean;
   setSpeaking: (v: boolean) => void; bottomRef: React.RefObject<HTMLDivElement | null>;
+  onAdvanceStage: () => void; currentStage: string;
 }) {
   return (
     <div style={{ flex: 1, overflowY: "auto", padding: "16px", display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -64,6 +65,19 @@ function MessageList({ messages, loading, speaking, setSpeaking, bottomRef }: {
         <div style={{ display: "flex", gap: "8px", alignItems: "flex-start" }}>
           <div style={{ width: "28px", height: "28px", borderRadius: "50%", background: COLORS.accent, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}><BookOpen size={14} color="white" /></div>
           <div style={{ padding: "10px 14px", borderRadius: "16px 16px 16px 4px", background: COLORS.card, border: "1px solid " + COLORS.border, fontSize: "13px", color: COLORS.muted }}>Thinking...</div>
+        </div>
+{!loading && currentStage !== "COMPLETE" && (
+        <div style={{ display: "flex", justifyContent: "center", padding: "8px 0" }}>
+          <button onClick={onAdvanceStage} style={{ background: COLORS.accentDim, border: "1px solid " + COLORS.accent, borderRadius: "20px", padding: "8px 20px", color: COLORS.accentLight, fontSize: "12px", fontWeight: 600, cursor: "pointer", display: "flex", alignItems: "center", gap: "6px" }}>
+            <CheckCircle size={13} />
+            {currentStage === "MORNING_HANDOVER" && "Start Lesson"}
+            {currentStage === "TEACH" && "Move to Guided Practice"}
+            {currentStage === "GUIDED" && "Move to Independent Practice"}
+            {currentStage === "PRACTICE" && "Move to Listening"}
+            {currentStage === "LISTENING" && "Move to Speaking"}
+            {currentStage === "SPEAKING" && "Take Assessment"}
+            {currentStage === "ASSESSMENT" && "Complete Session"}
+          </button>
         </div>
       )}
       <div ref={bottomRef} />
@@ -265,6 +279,54 @@ export default function Home() {
     }
   }
 
+  async function handleAdvanceStage() {
+    const stageOrder = ["MORNING_HANDOVER","TEACH","GUIDED","PRACTICE","LISTENING","SPEAKING","ASSESSMENT","COMPLETE"];
+    const currentIndex = stageOrder.indexOf(sessionState.stage);
+    if (currentIndex === -1 || currentIndex === stageOrder.length - 1) return;
+    const nextStage = stageOrder[currentIndex + 1];
+
+    setSessionState((prev: any) => ({
+      ...prev,
+      stage: nextStage,
+      stageStartedAt: Date.now(),
+    }));
+
+    const stageMessages: Record<string, string> = {
+      TEACH: "Handover complete. Now let us begin teaching. I will explain each concept step by step.",
+      GUIDED: "Teaching complete. Now let us practice together. I will give you questions and hints are allowed.",
+      PRACTICE: "Guided practice complete. Now let us try without hints. Answer from memory.",
+      LISTENING: "Independent practice complete. Now let us train your ear. Listen carefully and respond in German.",
+      SPEAKING: "Listening complete. Now let us work on your speaking. Use the microphone to respond.",
+      ASSESSMENT: "Speaking complete. Time for your final assessment. 10 questions, no hints.",
+      COMPLETE: "Assessment complete. Well done on finishing this session.",
+    };
+
+    const message = stageMessages[nextStage];
+    if (message) {
+      await sendMessage("[STAGE_ADVANCE] " + message);
+    }
+
+    if (nextStage === "COMPLETE" && student && dbSessionId) {
+      fetch("/api/session", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "complete_session",
+          studentId: student.id,
+          lessonId: currentLesson?.id,
+          sessionId: dbSessionId,
+          updates: {
+            correct: sessionState.correct,
+            incorrect: sessionState.incorrect,
+            mastery: sessionState.assessmentScore,
+            stage: "COMPLETE",
+            completed: true,
+          }
+        })
+      });
+    }
+  }
+
   function mergeSession(current: Session, update: any): Session {
     return {
       correct: update.correct ?? current.correct,
@@ -437,7 +499,7 @@ export default function Home() {
         <div style={{ flex: 1, display: "flex", flexDirection: "column", overflow: "hidden" }}>
           {activeTab === "chat" && (
             <div style={{ flex: 1, display: "flex", flexDirection: "column", overflow: "hidden" }}>
-              <MessageList messages={messages} loading={loading} speaking={speaking} setSpeaking={setSpeaking} bottomRef={bottomRef} />
+              <MessageList messages={messages} loading={loading} speaking={speaking} setSpeaking={setSpeaking} bottomRef={bottomRef} onAdvanceStage={handleAdvanceStage} currentStage={sessionState.stage} />
               {inputBar}
             </div>
           )}
@@ -459,7 +521,7 @@ export default function Home() {
               <div style={{ fontSize: "13px", fontWeight: 600, color: COLORS.accentLight, display: "flex", alignItems: "center", gap: "6px" }}><CheckCircle size={14} />Chat with your tutor</div>
             </div>
             <div style={{ flex: 1, display: "flex", flexDirection: "column", overflow: "hidden" }}>
-              <MessageList messages={messages} loading={loading} speaking={speaking} setSpeaking={setSpeaking} bottomRef={bottomRef} />
+              <MessageList messages={messages} loading={loading} speaking={speaking} setSpeaking={setSpeaking} bottomRef={bottomRef} onAdvanceStage={handleAdvanceStage} currentStage={sessionState.stage} />
               {inputBar}
             </div>
           </div>
